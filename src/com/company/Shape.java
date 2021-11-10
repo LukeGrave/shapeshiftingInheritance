@@ -1,7 +1,13 @@
 package com.company;
 
-public abstract class Shape {
-    String color;
-    boolean isFilled;
+import java.awt.*;
 
+public abstract class Shape {
+    private Color color;
+    private boolean isFilled;
+
+    public Shape(Color color, boolean isFilled) {
+        this.color = color;
+        this.isFilled = isFilled;
+    }
 }
