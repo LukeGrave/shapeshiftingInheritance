@@ -25,12 +25,12 @@ public class Rectangle extends Shape {
         Graphics2D g2d = (Graphics2D) g;
         int x = (int)(Math.random()*((600) + 1) + 100);   //number between 100 and 700 -- field is 800x800
         int y = (int)(Math.random()*((600) + 1) + 100);
+        g2d.setColor(getColor());
         if (isFilled()==true){
             g2d.fillRect(x,y, length, width);
         } else {
             g2d.drawRect(x,y, length, width);
         }
-        g2d.setColor(getColor());
     }
 
     @Override

@@ -23,12 +23,12 @@ public class Circle extends Shape {
         Graphics2D g2d = (Graphics2D) g;
         int x = (int)(Math.random()*((600) + 1) + 100);   //number between 100 and 700 -- field is 800x800
         int y = (int)(Math.random()*((600) + 1) + 100);
+        g2d.setColor(getColor());
         if (isFilled()==true){
             g2d.fillOval(x,y, radius, radius);
         } else {
             g2d.drawOval(x,y, radius, radius);
         }
-        g2d.setColor(getColor());
     }
 
     @Override
